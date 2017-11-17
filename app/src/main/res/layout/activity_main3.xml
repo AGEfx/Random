@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:id="@+id/first_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1234"
+        android:layout_above="@id/second_number"
+        android:layout_centerVertical="true"/>
+
+    <EditText
+        android:id="@+id/second_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4567"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_below="@id/second_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="322356"
+        android:textSize="21dp"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:onClick="plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottomTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/plus"
+        android:layout_margin="10dp"/>
+
+    <Button
+android:onClick="minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/minus"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:onClick="mult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/mult"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:onClick="div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/div"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>
